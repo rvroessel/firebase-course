@@ -1,0 +1,21 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/spec",
+    "baseUrl": "./",
+    "module": "commonjs",
+    "target": "es5",
+    "types": [
+      "jasmine",
+      "node"
+    ]
+***REMOVED***
+  "files": [
+    "test.ts",
+    "polyfills.ts"
+  ],
+  "include": [
+    "*****REMOVED***.spec.ts",
+    "*****REMOVED***.d.ts"
+  ]
+}
