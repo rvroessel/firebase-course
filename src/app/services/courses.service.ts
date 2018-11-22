@@ -1,10 +1,11 @@
 
 
 import {Injectable} from "@angular/core";
-import {Observable} from "rxjs";
+import {NEVER, never, Observable, of} from 'rxjs';
 import {Course} from "../model/course";
 import {map} from "rxjs/operators";
 import {Lesson} from "../model/lesson";
+
 
 
 @Injectable()
@@ -15,41 +16,22 @@ export class CoursesService {
  ***REMOVED*****REMOVED***
 
     findCourseById(courseId: number): Observable<Course> {
-        return this.http.get<Course>(`/api/courses/${courseId}`);
+        return NEVER;
  ***REMOVED*****REMOVED***
 
     findAllCourses(): Observable<Course[]> {
-        return this.http.get('/api/courses')
-            .pipe(
-                map(res => res['payload'])
-            );
+        return of([]);
  ***REMOVED*****REMOVED***
 
     findAllCourseLessons(courseId:number): Observable<Lesson[]> {
-        return this.http.get('/api/lessons', {
-            params: new HttpParams()
-                .set('courseId', courseId.toString())
-                .set('pageNumber', "0")
-                .set('pageSize', "1000")
-     ***REMOVED*****REMOVED***).pipe(
-            map(res =>  res["payload"])
-        );
+        return of([]);
  ***REMOVED*****REMOVED***
 
     findLessons(
         courseId:number, filter = '', sortOrder = 'asc',
         pageNumber = 0, pageSize = 3):  Observable<Lesson[]> {
 
-        return this.http.get('/api/lessons', {
-            params: new HttpParams()
-                .set('courseId', courseId.toString())
-                .set('filter', filter)
-                .set('sortOrder', sortOrder)
-                .set('pageNumber', pageNumber.toString())
-                .set('pageSize', pageSize.toString())
-     ***REMOVED*****REMOVED***).pipe(
-            map(res =>  res["payload"])
-        );
+        return of([]);
  ***REMOVED*****REMOVED***
 
 }
