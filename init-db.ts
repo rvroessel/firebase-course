@@ -1,4 +1,4 @@
-import {COURSES} from './db-data';
+import {COURSES, findLessonsForCourse} from './db-data';
 
 const firebase = require('firebase');
 
@@ -39,20 +39,40 @@ async function uploadData() {
 
 
   Object.values(COURSES)
-    .forEach(course => {
+    .forEach(async (course:any) => {
 
-      const newCourse:any = {...course***REMOVED***
+      const newCourse = removeId(course);
 
-      // use Firestore Ids instead
-      delete newCourse.id;
+      const courseRef = await courses.add(newCourse);
 
-      courses.add(newCourse);
+      const lessons = courseRef.collection("lessons");
+
+      const courseLessons = findLessonsForCourse(course.id);
+
+      console.log('Adding lessons: ' + courseLessons.length);
+
+      courseLessons.forEach(async lesson => {
+
+        const newLesson = removeId(lesson);
+
+        await lessons.add(newLesson);
+
+   ***REMOVED*****REMOVED***);
 
  ***REMOVED*****REMOVED***);
 
   return batch.commit();
 }
 
+
+function removeId(data:any) {
+
+  const newData: any = {...data***REMOVED***
+
+  delete newData.id;
+
+  return newData;
+}
 
 
 uploadData()
