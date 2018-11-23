@@ -4,5 +4,13 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 ***REMOVED***
-  production: false
+***REMOVED***
+***REMOVED***
+    apiKey: 'AIzaSyDAdoefqX5OqjkD3BkW25ZAL6XYZMo4Vz8',
+    authDomain: 'fir-course-17549.firebaseapp.com',
+    databaseURL: 'https://fir-course-17549.firebaseio.com',
+    projectId: 'fir-course-17549',
+    storageBucket: 'fir-course-17549.appspot.com',
+    messagingSenderId: '170806523820'
+***REMOVED***
 ***REMOVED***
