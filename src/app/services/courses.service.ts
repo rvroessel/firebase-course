@@ -41,12 +41,6 @@ export class CoursesService {
       );
 ***REMOVED***
 
-
-  findAllCourseLessons(courseId: number): Observable<Lesson[]> {
-    return of([]);
-***REMOVED***
-
-
   findLessons(
     courseId: string, sortOrder = 'asc',
     pageNumber = 0, pageSize = 3): Observable<Lesson[]> {
