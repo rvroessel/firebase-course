@@ -21,7 +21,18 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
 
       this.db.collection('courses').snapshotChanges()
-          .subscribe(snaps => console.log(snaps));
+          .subscribe(snaps => {
+
+              const courses: Course[] = snaps.map(snap => {
+                  return <Course> {
+                      id: snap.payload.doc.id,
+                      ...snap.payload.doc.data()
+               ***REMOVED*****REMOVED***
+           ***REMOVED*****REMOVED***)
+
+              console.log(courses);
+
+       ***REMOVED*****REMOVED***);
 
 ***REMOVED***
 
