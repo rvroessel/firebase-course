@@ -20,7 +20,7 @@ export class CoursesCardListComponent implements OnInit {
 
  ***REMOVED*****REMOVED***
 
-    editCourse({description, longDescription, category}:Course) {
+    editCourse({titles}:Course) {
 
         const dialogConfig = new MatDialogConfig();
 
@@ -28,7 +28,7 @@ export class CoursesCardListComponent implements OnInit {
         dialogConfig.autoFocus = true;
 
         dialogConfig.data = {
-            description, longDescription, category
+            titles
      ***REMOVED*****REMOVED***;
 
         const dialogRef = this.dialog.open(CourseDialogComponent,
