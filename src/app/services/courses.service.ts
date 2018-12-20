@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {AngularFirestore} from '@angular/fire/firestore';
 import {Course} from '../model/course';
-import {Observable} from 'rxjs';
+import {Observable,of} from 'rxjs';
 import {first, map} from 'rxjs/operators';
 
 @Injectable({
@@ -30,4 +30,29 @@ export class CoursesService {
          ***REMOVED*****REMOVED***),
                 first());
  ***REMOVED*****REMOVED***
+
+    findCourseByUrl(courseUrl: string) {
+        return of(undefined);
+ ***REMOVED*****REMOVED***
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
