@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import***REMOVED*** as firebaseui from 'firebaseui';
+import***REMOVED*** as firebase from 'firebase';
+
 
 @Component({
   selector: 'login',
