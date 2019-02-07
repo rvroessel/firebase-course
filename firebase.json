@@ -17,4 +17,7 @@
    ***REMOVED*****REMOVED***
     ]
 ***REMOVED***
+  "storage": {
+    "rules": "storage.rules"
+***REMOVED***
 }
