@@ -1,8 +1,9 @@
-## Compiled JavaScript files
-*****REMOVED***.js
-*****REMOVED***.js.map
+# Compiled JavaScript files
+lib***REMOVED*******REMOVED***.js
+lib***REMOVED*******REMOVED***.js.map
 
-# Typescript v1 declaration files
+# TypeScript v1 declaration files
 typings/
 
+# Node.js dependency directory
 node_modules/
