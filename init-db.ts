@@ -1,7 +1,8 @@
 
 import {COURSES, findLessonsForCourse} from './db-data';
 
-import***REMOVED*** as firebase from 'firebase';
+import firebase from 'firebase/app';
+import 'firebase/firestore';
 
 var config = {
   apiKey: "AIzaSyDAdoefqX5OqjkD3BkW25ZAL6XYZMo4Vz8",

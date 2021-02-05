@@ -9,7 +9,7 @@
     "logs": "firebase functions:log"
 ***REMOVED***
   "engines": {
-    "node": "14"
+    "node": "12"
 ***REMOVED***
   "main": "lib/index.js",
   "dependencies": {
