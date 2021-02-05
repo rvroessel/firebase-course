@@ -4,9 +4,10 @@
 
 ***REMOVED***
 ***REMOVED***
-  useEmulators:true,
+  useEmulators: true,
 ***REMOVED***
-    projectId: "fir-course-v2"
+    projectId: 'fir-course-v2',
+    apiKey: 'AIzaSyAsrcKEDOFUC9fKMxxng0Fi6PjqNVQj8vk'
 ***REMOVED***
 ***REMOVED***
 
