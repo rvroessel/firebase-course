@@ -1,19 +1,4 @@
 {
-  "indexes": [
-    {
-      "collectionGroup": "courses",
-      "queryScope": "COLLECTION",
-      "fields": [
-        {
-          "fieldPath": "seqNo",
-          "order": "ASCENDING"
-     ***REMOVED*****REMOVED***
-        {
-          "fieldPath": "lessonsCount",
-          "order": "ASCENDING"
-     ***REMOVED*****REMOVED***
-      ]
- ***REMOVED*****REMOVED***
-  ],
+  "indexes": [],
   "fieldOverrides": []
 }
