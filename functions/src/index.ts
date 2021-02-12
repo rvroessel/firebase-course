@@ -1,5 +1,5 @@
 import***REMOVED*** as functions from 'firebase-functions';
-
+import {createUserApp} from './auth/create-user';
 //
 // Start writing Firebase Functions
 //
@@ -13,10 +13,13 @@ export const helloWorld = functions.https.onRequest((request, response) => {
 
 export const createUser = functions.https.onRequest(createUserApp);
 
+***REMOVED*** TODO
 export const setUserCustomClaims = functions.firestore.document('users/{userId}')
   .onCreate(async (snap, context) => {
     await (await import('./auth/set-custom-claims')).default(snap, context);
 ***REMOVED***);
+ ***REMOVED***/
+
 
 export const onAddCourseUpdatePromoCounter = functions.runWith({
   timeoutSeconds: 300,

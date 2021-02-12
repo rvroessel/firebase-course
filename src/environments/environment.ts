@@ -14,6 +14,9 @@
     appId: "1:507380388733:web:1f20583d30ea71e02cb214"
 ***REMOVED***
 ***REMOVED***
+    createUser: "http://localhost:5001/fir-course-v2/us-central1/createUser"
+***REMOVED***
+***REMOVED***
 
 ***REMOVED***
 ***REMOVED***

@@ -1,4 +1,5 @@
 import {auth, db} from '../common/init';
+import***REMOVED*** as functions from 'firebase-functions';
 
 const express = require('express');
 const cors = require('cors');
@@ -14,18 +15,28 @@ createUserApp.use(cors({origin: true}));
 createUserApp
   .post('/', async (req, res) => {
 
+    functions.logger.debug(`Calling create user function.`);
+
     const email = req.body.email,
       password = req.body.password,
       admin = req.body.admin;
 
-    const user = await auth.createUser({
-      email,
-      password
- ***REMOVED*****REMOVED***);
+    try {
+      const user = await auth.createUser({
+        email,
+        password
+   ***REMOVED*****REMOVED***);
 
-    await auth.setCustomUserClaims(user.uid, {admin});
+      await auth.setCustomUserClaims(user.uid, {admin});
 
-    return db.doc(`users/${user.uid}`).set();
+      await db.doc(`users/${user.uid}`).set({});
+
+      res.status(200).json({message: "User created successfully."});
+ ***REMOVED*****REMOVED***
+    catch(err) {
+      functions.logger.error(`Could not create user.`, err);
+      res.status(500).json({message: "Could not create user."});
+ ***REMOVED*****REMOVED***
 
 ***REMOVED***);
 
