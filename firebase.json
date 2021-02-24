@@ -27,4 +27,18 @@
   "storage": {
     "rules": "storage.rules"
 ***REMOVED***
+  "hosting": {
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules***REMOVED****"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+   ***REMOVED*****REMOVED***
+    ]
+***REMOVED***
 }
