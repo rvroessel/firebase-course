@@ -24,10 +24,23 @@ export class CoursesService {
       .snapshotChanges()
       .pipe(
         map(snaps => convertSnaps<Course>(snaps)),
-        tap(console.log),
         first(),
         shareReplay()
       );
+***REMOVED***
+
+  loadCourseByCategory(category: string) {
+    return this.afs.collection(
+      "courses",
+      ref => ref.where("categories", "array-contains", category).orderBy('seqNo')
+    )
+      .snapshotChanges()
+      .pipe(
+        map(snaps => convertSnaps<Course>(snaps)),
+        first(),
+        shareReplay()
+      );
+
 ***REMOVED***
 
   findCourseByUrl(courseUrl: string): Observable<Course> {

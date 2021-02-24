@@ -44,15 +44,11 @@ export class HomeComponent implements OnInit {
               return of([]);
          ***REMOVED*****REMOVED***),
           );
-        this.beginnersCourses$ = this.courses$
-          .pipe(
-            map(courses => courses.filter(course => course.category == 'BEGINNER'))
-          );
 
-        this.advancedCourses$ = this.courses$
-          .pipe(
-            map(courses => courses.filter(course => course.category == "ADVANCED"))
-          );
+        this.beginnersCourses$ = this.coursesService.loadCourseByCategory("BEGINNER");
+
+        this.advancedCourses$ = this.coursesService.loadCourseByCategory("ADVANCED");
+
  ***REMOVED*****REMOVED***
 
 
