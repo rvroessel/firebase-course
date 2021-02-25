@@ -3,40 +3,25 @@ import {Routes, RouterModule} from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {AboutComponent} from './about/about.component';
 import {CourseComponent} from './course/course.component';
-import {CourseResolver} from './services/course.resolver';
 import {LoginComponent} from './login/login.component';
 import {CreateCourseComponent} from './create-course/create-course.component';
 import {AngularFireAuthGuard, hasCustomClaim, redirectUnauthorizedTo} from '@angular/fire/auth-guard';
 import {CreateUserComponent} from './create-user/create-user.component';
 
-const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(['login']);
-
-const adminOnly = () => hasCustomClaim('admin') && redirectUnauthorizedToLogin();
-
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
-    canActivate: [AngularFireAuthGuard],
-    data: {
-      authGuardPipe: redirectUnauthorizedToLogin
- ***REMOVED*****REMOVED***
+    component: HomeComponent
 ***REMOVED***
   {
     path: 'create-course',
-    component: CreateCourseComponent,
-    canActivate: [AngularFireAuthGuard],
-    data: {
-      authGuardPipe: adminOnly
- ***REMOVED*****REMOVED***
+    component: CreateCourseComponent
+
 ***REMOVED***
   {
     path: 'create-user',
-    component: CreateUserComponent,
-    canActivate: [AngularFireAuthGuard],
-    data: {
-      authGuardPipe: adminOnly
- ***REMOVED*****REMOVED***
+    component: CreateUserComponent
+
 ***REMOVED***
   {
     path: 'about',
@@ -48,14 +33,7 @@ const routes: Routes = [
 ***REMOVED***
   {
     path: 'courses/:courseUrl',
-    component: CourseComponent,
-    resolve: {
-      course: CourseResolver
- ***REMOVED*****REMOVED***
-    canActivate: [AngularFireAuthGuard],
-    data: {
-      authGuardPipe: redirectUnauthorizedToLogin
- ***REMOVED*****REMOVED***
+    component: CourseComponent
 ***REMOVED***
   {
     path: '**',
@@ -64,7 +42,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {relativeLinkResolution: 'legacy'})],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule {
