@@ -40,6 +40,17 @@ export class AboutComponent  {
 ***REMOVED***
 
 
+    onReadDoc() {
+
+      this.db.doc("/courses/3ZhoNEWSGUcfWOV8IifA").get()
+          .subscribe(snap => {
+
+              console.log(snap.id);
+              console.log(snap.data());
+
+       ***REMOVED*****REMOVED***);
+
+ ***REMOVED*****REMOVED***
 }
 
 
