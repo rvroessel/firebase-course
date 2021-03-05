@@ -52,6 +52,21 @@ export class AboutComponent  {
        ***REMOVED*****REMOVED***);
 
  ***REMOVED*****REMOVED***
+
+    onReadCollection() {
+      this.db.collection("courses").get()
+          .subscribe(snaps => {
+
+              snaps.forEach(snap => {
+
+                  console.log(snap.id);
+                  console.log(snap.data());
+
+           ***REMOVED*****REMOVED***)
+
+       ***REMOVED*****REMOVED***);
+
+ ***REMOVED*****REMOVED***
 }
 
 
