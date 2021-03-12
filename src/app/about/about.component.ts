@@ -72,7 +72,27 @@ export class AboutComponent  {
        ***REMOVED*****REMOVED***);
 
  ***REMOVED*****REMOVED***
+
+    onReadCollectionGroup() {
+
+      this.db.collectionGroup("lessons",
+          ref => ref.where("seqNo", "==", 1) )
+          .get()
+          .subscribe(snaps => {
+
+              snaps.forEach(snap => {
+
+                  console.log(snap.id);
+                  console.log(snap.data());
+
+           ***REMOVED*****REMOVED***)
+
+       ***REMOVED*****REMOVED***);
+
+ ***REMOVED*****REMOVED***
 }
+
+
 
 
 
