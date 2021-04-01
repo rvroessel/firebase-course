@@ -16,7 +16,16 @@ import Timestamp = firebase.firestore.Timestamp;
 })
 export class CreateCourseComponent implements OnInit {
 
-  constructor() {
+  form = this.fb.group({
+     description:  ['', Validators.required],
+      category: ["BEGINNER", Validators.required],
+      url: ['', Validators.required],
+      longDescription: ['', Validators.required],
+      promo: [false],
+      promoStartAt: [null]
+***REMOVED***);
+
+  constructor(private fb:FormBuilder) {
 
 ***REMOVED***
 
@@ -24,4 +33,13 @@ export class CreateCourseComponent implements OnInit {
 
 ***REMOVED***
 
+    onCreateCourse() {
+
+      const newCourse = {...this.form.value} as Course;
+
+      newCourse.promoStartAt = Timestamp.fromDate(this.form.value.promoStartAt);
+
+      console.log(newCourse);
+
+ ***REMOVED*****REMOVED***
 }
