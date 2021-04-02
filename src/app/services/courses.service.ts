@@ -15,6 +15,10 @@ export class CoursesService {
 
  ***REMOVED*****REMOVED***
 
+    createCourse(newCourse: Partial<Course>, courseId?:string) {
+
+ ***REMOVED*****REMOVED***
+
     loadCoursesByCategory(category:string): Observable<Course[]> {
          return this.db.collection(
             "courses",
