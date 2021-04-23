@@ -15,6 +15,10 @@ export class CoursesService {
 
  ***REMOVED*****REMOVED***
 
+    deleteCourse(courseId:string) {
+        return from(this.db.doc(`courses/${courseId}`).delete());
+ ***REMOVED*****REMOVED***
+
     updateCourse(courseId:string, changes: Partial<Course>):Observable<any> {
         return from(this.db.doc(`courses/${courseId}`).update(changes));
  ***REMOVED*****REMOVED***
