@@ -14,16 +14,49 @@ import GoogleAuthProvider = firebase.auth.GoogleAuthProvider;
 })
 export class LoginComponent implements OnInit, OnDestroy {
 
+    ui: firebaseui.auth.AuthUI;
 
-    constructor() {
+
+    constructor(
+        private afAuth: AngularFireAuth,
+        private router: Router) {
 
  ***REMOVED*****REMOVED***
 
     ngOnInit() {
 
+        this.afAuth.app.then(app => {
+            const uiConfig = {
+                signInOptions: [
+                    EmailAuthProvider.PROVIDER_ID,
+                    GoogleAuthProvider.PROVIDER_ID
+                ],
+                callbacks: {
+                    signInSuccessWithAuthResult: this.onLoginSuccessful.bind(this)
+             ***REMOVED*****REMOVED***
+         ***REMOVED*****REMOVED***;
+
+            this.ui = new firebaseui.auth.AuthUI(app.auth());
+
+            this.ui.start("#firebaseui-auth-container", uiConfig);
+
+            this.ui.disableAutoSignIn();
+     ***REMOVED*****REMOVED***);
+
+
  ***REMOVED*****REMOVED***
 
     ngOnDestroy() {
+        this.ui.delete();
+ ***REMOVED*****REMOVED***
+
+    onLoginSuccessful(result) {
+
+        console.log('Firebase UI result:', result);
+
+        this.router.navigateByUrl("/courses");
+
+
 
  ***REMOVED*****REMOVED***
 }
