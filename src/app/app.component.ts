@@ -21,4 +21,7 @@ export class AppComponent implements OnInit {
 
 ***REMOVED***
 
+    logout() {
+        this.user.logout();
+ ***REMOVED*****REMOVED***
 }
