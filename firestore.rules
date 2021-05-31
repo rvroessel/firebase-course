@@ -42,6 +42,11 @@ service cloud.firestore {
 
   ***REMOVED*****REMOVED***
 
+     match /{path=**}/lessons/{lessonId} {
+        allow read: if isKnownUser();
+  ***REMOVED*****REMOVED***
+
+
 ***REMOVED***
 
 }
