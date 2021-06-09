@@ -4,7 +4,7 @@
 
 ***REMOVED***
 ***REMOVED***
-  useEmulators: true,
+***REMOVED***
 ***REMOVED***
       apiKey: "AIzaSyB9LOREMGhj1jpVXOHTKIwQu2oM7pVfjQg",
       authDomain: "fir-course-recording-c7f3e.firebaseapp.com",
