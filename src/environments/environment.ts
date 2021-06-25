@@ -14,7 +14,7 @@
       appId: "1:927953565493:web:0d4a8e79cc45fd38733e7c"
 ***REMOVED***
 ***REMOVED***
-
+      createUser: "http://localhost:5001/fir-course-recording-c7f3e/us-central1/createUser"
 ***REMOVED***
 ***REMOVED***
 
