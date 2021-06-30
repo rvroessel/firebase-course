@@ -1,49 +1,49 @@
+rules_version = '2';
+
 service cloud.firestore {
 
   match /databases/{database}/documents {
 
-     function isAuthenticated() {
-     	return request.auth.uid !=null;
-  ***REMOVED*****REMOVED***
-     
-     function isNonEmptyString(fieldName) {
-     return request.resource.data[fieldName] is string &&
-     				request.resource.data[fieldName].size()> 0;
-  ***REMOVED*****REMOVED***
-     
-     function isValidCourse() {
-     	return request.resource.data.seqNo is number
-      			&& request.resource.data.lessonsCount is number
-            && request.resource.data.lessonsCount > 0
-            && isNonEmptyString("url"); 
-     
-  ***REMOVED*****REMOVED***
-     
      function isAdmin() {
-       return isAuthenticated() &&
-          get( /databases/$(database)/documents/users/$(request.auth.uid)).data.isAdmin == true;
+        return isAuthenticated() && 'admin' in request.auth.token &&
+            request.auth.token.admin == true;
   ***REMOVED*****REMOVED***
-          
+
+     function isAuthenticated() {
+        return request.auth.uid != null;
+  ***REMOVED*****REMOVED***
+
      function isKnownUser() {
-        return isAuthenticated() && 
-        exists( /databases/$(database)/documents/users/$(request.auth.uid) );
+        return isAuthenticated() &&
+          exists(/databases/$(database)/documents/users/$(request.auth.uid));
   ***REMOVED*****REMOVED***
-     
-     match /users/{userId} {
-       allow read, write: if false;
+
+     function isNonEmptyString(fieldName) {
+        return request.resource.data[fieldName] is string &&
+        request.resource.data[fieldName].size() > 0;
+  ***REMOVED*****REMOVED***
+
+     function isValidCourse() {
+        return request.resource.data.seqNo is number &&
+        request.resource.data.seqNo >= 0 &&
+        isNonEmptyString("url");
   ***REMOVED*****REMOVED***
 
      match /courses/{courseId} {
-     	allow read: if isKnownUser();
-      allow write: if isAdmin() && isValidCourse() 
-      && resource.data.status == 'draft';
-      
-      match /lessons/{lessonId} {
-       allow read: if isKnownUser();
-       allow write: if isAdmin();
-      
-   ***REMOVED*****REMOVED***
-      
+
+        allow read: if isKnownUser();
+
+        allow create, update: if isValidCourse() && isAdmin();
+        allow delete: if isAdmin();
+
+        match /lessons/{lessonId} {
+          allow read: if isKnownUser();
+     ***REMOVED*****REMOVED***
+
+  ***REMOVED*****REMOVED***
+
+     match /{path=**}/lessons/{lessonId} {
+        allow read: if isKnownUser();
   ***REMOVED*****REMOVED***
 
 

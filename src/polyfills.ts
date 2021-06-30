@@ -11,66 +11,55 @@
 ***REMOVED*** automatically update themselves. This includes Safari >= 10, Chrome >= 55 (including Opera),
 ***REMOVED*** Edge >= 13 on the desktop, and iOS 10 and Chrome on mobile.
 ***REMOVED***
-***REMOVED*** Learn more in https://angular.io/docs/ts/latest/guide/browser-support.html
+***REMOVED*** Learn more in https://angular.io/guide/browser-support
 ***REMOVED***/
 
 ***REMOVED*****************************************************************************************************
 ***REMOVED*** BROWSER POLYFILLS
 ***REMOVED***/
 
-***REMOVED**** IE9, IE10 and IE11 requires all of the following polyfills.***REMOVED****/
-// import 'core-js/es6/symbol';
-// import 'core-js/es6/object';
-// import 'core-js/es6/function';
-// import 'core-js/es6/parse-int';
-// import 'core-js/es6/parse-float';
-// import 'core-js/es6/number';
-// import 'core-js/es6/math';
-// import 'core-js/es6/string';
-// import 'core-js/es6/date';
-// import 'core-js/es6/array';
-// import 'core-js/es6/regexp';
-// import 'core-js/es6/map';
-// import 'core-js/es6/weak-map';
-// import 'core-js/es6/set';
-
-***REMOVED**** IE10 and IE11 requires the following for NgClass support on SVG elements***REMOVED***/
+***REMOVED****
+***REMOVED*** IE11 requires the following for NgClass support on SVG elements
+***REMOVED***/
 // import 'classlist.js';  // Run `npm install --save classlist.js`.
 
-***REMOVED**** IE10 and IE11 requires the following for the Reflect API.***REMOVED***/
-// import 'core-js/es6/reflect';
-
-
-***REMOVED**** Evergreen browsers require these.***REMOVED****/
-// Used for reflect-metadata in JIT. If you use AOT (and only Angular decorators), you can remove.
-
-
-
 ***REMOVED****
-***REMOVED*** Required to support Web Animations `@angular/platform-browser/animations`.
-***REMOVED*** Needed for: All but Chrome, Firefox and Opera. http://caniuse.com/#feat=web-animation
-***REMOVED****/
+***REMOVED*** Web Animations `@angular/platform-browser/animations`
+***REMOVED*** Only required if AnimationBuilder is used within the application and using IE/Edge or Safari.
+***REMOVED*** Standard animation support in Angular DOES NOT require any polyfills (as of Angular 6.0).
+***REMOVED***/
 // import 'web-animations-js';  // Run `npm install --save web-animations-js`.
 
-
+***REMOVED****
+***REMOVED*** By default, zone.js will patch all possible macroTask and DomEvents
+***REMOVED*** user can disable parts of macroTask/DomEvents patch by setting following flags
+***REMOVED*** because those flags need to be set before `zone.js` being loaded, and webpack
+***REMOVED*** will put import in the top of bundle, so user need to create a separate file
+***REMOVED*** in this directory (for example: zone-flags.ts), and put the following flags
+***REMOVED*** into that file, and then add the following code before importing zone.js.
+***REMOVED*** import './zone-flags';
+***REMOVED***
+***REMOVED*** The flags allowed in zone-flags.ts are listed here.
+***REMOVED***
+***REMOVED*** The following flags will work for all browsers.
+***REMOVED***
+***REMOVED*** (window as any).__Zone_disable_requestAnimationFrame = true; // disable patch requestAnimationFrame
+***REMOVED*** (window as any).__Zone_disable_on_property = true; // disable patch onProperty such as onclick
+***REMOVED*** (window as any).__zone_symbol__UNPATCHED_EVENTS = ['scroll', 'mousemove']; // disable patch specified eventNames
+***REMOVED***
+***REMOVED***  in IE/Edge developer tools, the addEventListener will also be wrapped by zone.js
+***REMOVED***  with the following flag, it will bypass `zone.js` patch for IE/Edge
+***REMOVED***
+***REMOVED***  (window as any).__Zone_enable_cross_context_check = true;
+***REMOVED***
+***REMOVED***/
 
 ***REMOVED*****************************************************************************************************
-***REMOVED*** Zone JS is required by Angular itself.
+***REMOVED*** Zone JS is required by default for Angular itself.
 ***REMOVED***/
-import 'zone.js/dist/zone';  // Included with Angular CLI.
-
+import 'zone.js';  // Included with Angular CLI.
 
 
 ***REMOVED*****************************************************************************************************
 ***REMOVED*** APPLICATION IMPORTS
 ***REMOVED***/
-
-***REMOVED****
-***REMOVED*** Date, currency, decimal and percent pipes.
-***REMOVED*** Needed for: All but Chrome, Firefox, Edge, IE11 and Safari 10
-***REMOVED***/
-// import 'intl';  // Run `npm install --save intl`.
-***REMOVED****
-***REMOVED*** Need to import at least one locale-data with intl.
-***REMOVED***/
-// import 'intl/locale-data/jsonp/en';

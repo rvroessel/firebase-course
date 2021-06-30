@@ -5,15 +5,52 @@
       "queryScope": "COLLECTION",
       "fields": [
         {
+          "fieldPath": "categories",
+          "arrayConfig": "CONTAINS"
+     ***REMOVED*****REMOVED***
+        {
           "fieldPath": "seqNo",
           "order": "ASCENDING"
      ***REMOVED*****REMOVED***
+      ]
+ ***REMOVED*****REMOVED***
+    {
+      "collectionGroup": "courses",
+      "queryScope": "COLLECTION",
+      "fields": [
         {
-          "fieldPath": "lessonsCount",
+          "fieldPath": "url",
+          "order": "ASCENDING"
+     ***REMOVED*****REMOVED***
+        {
+          "fieldPath": "seqNo",
           "order": "ASCENDING"
      ***REMOVED*****REMOVED***
       ]
  ***REMOVED*****REMOVED***
   ],
-  "fieldOverrides": []
+  "fieldOverrides": [
+    {
+      "collectionGroup": "lessons",
+      "fieldPath": "seqNo",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION"
+     ***REMOVED*****REMOVED***
+        {
+          "order": "DESCENDING",
+          "queryScope": "COLLECTION"
+     ***REMOVED*****REMOVED***
+        {
+          "arrayConfig": "CONTAINS",
+          "queryScope": "COLLECTION"
+     ***REMOVED*****REMOVED***
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+     ***REMOVED*****REMOVED***
+      ]
+ ***REMOVED*****REMOVED***
+  ]
 }

@@ -1,8 +1,10 @@
 import {Component, NgZone, OnDestroy, OnInit} from '@angular/core';
 import***REMOVED*** as firebaseui from 'firebaseui';
-import***REMOVED*** as firebase from 'firebase/app';
 import {AngularFireAuth} from '@angular/fire/auth';
 import {Router} from '@angular/router';
+import firebase from 'firebase/app';
+import EmailAuthProvider = firebase.auth.EmailAuthProvider;
+import GoogleAuthProvider = firebase.auth.GoogleAuthProvider;
 
 
 @Component({
@@ -14,31 +16,31 @@ export class LoginComponent implements OnInit, OnDestroy {
 
     ui: firebaseui.auth.AuthUI;
 
-    constructor(private afAuth: AngularFireAuth,
-                private router:Router,
-                private ngZone: NgZone) {
+    constructor(
+        private afAuth: AngularFireAuth,
+        private router: Router) {
 
  ***REMOVED*****REMOVED***
 
     ngOnInit() {
 
-        const uiConfig = {
-            signInOptions: [
-                firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-                firebase.auth.EmailAuthProvider.PROVIDER_ID
-            ],
-            callbacks: {
+        this.afAuth.app.then(app => {
+            const uiConfig = {
+                signInOptions: [
+                    EmailAuthProvider.PROVIDER_ID,
+                    GoogleAuthProvider.PROVIDER_ID
+                ],
+                callbacks: {
+                    signInSuccessWithAuthResult: this.onLoginSuccessful.bind(this)
+             ***REMOVED*****REMOVED***
+         ***REMOVED*****REMOVED***;
 
-                signInSuccessWithAuthResult: this
-                    .onLoginSuccessful
-                    .bind(this)
-         ***REMOVED*****REMOVED***
+            this.ui = new firebaseui.auth.AuthUI(app.auth());
 
-     ***REMOVED*****REMOVED***;
+            this.ui.start("#firebaseui-auth-container", uiConfig);
 
-        this.ui = new firebaseui.auth.AuthUI(this.afAuth.auth);
-
-        this.ui.start('#firebaseui-auth-container', uiConfig);
+            this.ui.disableAutoSignIn();
+     ***REMOVED*****REMOVED***);
 
 
  ***REMOVED*****REMOVED***
@@ -49,9 +51,11 @@ export class LoginComponent implements OnInit, OnDestroy {
 
     onLoginSuccessful(result) {
 
-        console.log("Firebase UI result:", result);
+        console.log('Firebase UI result:', result);
 
-        this.ngZone.run(() => this.router.navigateByUrl('/courses'));
+        this.router.navigateByUrl("/courses");
+
+
 
  ***REMOVED*****REMOVED***
 }
