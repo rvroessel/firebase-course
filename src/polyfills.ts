@@ -19,18 +19,6 @@
 ***REMOVED***/
 
 ***REMOVED****
-***REMOVED*** IE11 requires the following for NgClass support on SVG elements
-***REMOVED***/
-// import 'classlist.js';  // Run `npm install --save classlist.js`.
-
-***REMOVED****
-***REMOVED*** Web Animations `@angular/platform-browser/animations`
-***REMOVED*** Only required if AnimationBuilder is used within the application and using IE/Edge or Safari.
-***REMOVED*** Standard animation support in Angular DOES NOT require any polyfills (as of Angular 6.0).
-***REMOVED***/
-// import 'web-animations-js';  // Run `npm install --save web-animations-js`.
-
-***REMOVED****
 ***REMOVED*** By default, zone.js will patch all possible macroTask and DomEvents
 ***REMOVED*** user can disable parts of macroTask/DomEvents patch by setting following flags
 ***REMOVED*** because those flags need to be set before `zone.js` being loaded, and webpack
