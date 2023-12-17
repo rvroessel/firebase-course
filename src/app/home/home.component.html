@@ -5,42 +5,22 @@
 
         <h2 class="title">All Courses</h2>
 
-        <ng-container***REMOVED***ngIf="(user.roles$ | async) as roles">
-
-            <ng-container***REMOVED***ngIf="roles.admin">
-
-                <button mat-mini-fab color="accent" routerLink="/create-course">
-                    <mat-icon class="add-course-btn">add</mat-icon>
-                </button>
-
-            </ng-container>
-
-        </ng-container>
-
-
+        <button mat-mini-fab color="accent">
+            <mat-icon class="add-course-btn">add</mat-icon>
+        </button>
 
     </div>
 
     <mat-tab-group>
 
         <mat-tab label="Beginners">
-
-            <courses-card-list [courses]="beginnersCourses$ | async"
-                (courseEdited)="reloadCourses()"
-                (courseDeleted)="reloadCourses()">
-
-            </courses-card-list>
-
+            <courses-card-list [courses]="beginnersCourses$ | async"></courses-card-list>
         </mat-tab>
 
         <mat-tab label="Advanced">
-
-            <courses-card-list [courses]="advancedCourses$ | async"
-                               (courseEdited)="reloadCourses()"
-                               (courseDeleted)="reloadCourses()">
-
-            </courses-card-list>
-
+        
+                <courses-card-list [courses]="advancedCourses$ | async"></courses-card-list>
+            
         </mat-tab>
 
     </mat-tab-group>

@@ -15,11 +15,11 @@
       ]
  ***REMOVED*****REMOVED***
     {
-      "collectionGroup": "courses",
+      "collectionGroup": "lessons",
       "queryScope": "COLLECTION",
       "fields": [
         {
-          "fieldPath": "url",
+          "fieldPath": "lessonsCount",
           "order": "ASCENDING"
      ***REMOVED*****REMOVED***
         {
@@ -33,6 +33,7 @@
     {
       "collectionGroup": "lessons",
       "fieldPath": "seqNo",
+      "ttl": false,
       "indexes": [
         {
           "order": "ASCENDING",

@@ -1,43 +1,19 @@
-import***REMOVED*** as functions from "firebase-functions";
-import {createUserApp} from "./create-user";
+***REMOVED****
+***REMOVED*** Import function triggers from their respective submodules:
+***REMOVED***
+***REMOVED*** import {onCall} from "firebase-functions/v2/https";
+***REMOVED*** import {onDocumentWritten} from "firebase-functions/v2/firestore";
+***REMOVED***
+***REMOVED*** See a full list of supported triggers at https://firebase.google.com/docs/functions
+***REMOVED***/
 
-//
-// Start writing Firebase Functions
+import {onRequest} from "firebase-functions/v2/https";
+import***REMOVED*** as logger from "firebase-functions/logger";
+
+// Start writing functions
 // https://firebase.google.com/docs/functions/typescript
-//
 
-
-export const createUser = functions.https.onRequest(createUserApp);
-
-
-export const onAddCourseUpdatePromoCounter =
-    functions
-        .runWith({
-            timeoutSeconds: 300,
-            memory: "128MB"
-     ***REMOVED*****REMOVED***)
-        .firestore.document("courses/{courseId}")
-        .onCreate(async(snap, context) => {
-            await (
-                await import("./promotions-counter/on-add-course"))
-                .default(snap, context);
-     ***REMOVED*****REMOVED***);
-
-
-export const onCourseUpdatedUpdatePromoCounter =
-    functions.firestore
-        .document('courses/{courseId}')
-        .onUpdate(async (change, context) => {
-            await (await import('./promotions-counter/on-course-updated'))
-                .default(change, context);
-
-     ***REMOVED*****REMOVED***)
-
-export const onCourseDeletedUpdatePromoCounter =
-    functions.firestore
-        .document('courses/{courseId}')
-        .onDelete(async(snap, context) => {
-            await (
-                await import("./promotions-counter/on-delete-course"))
-                .default(snap, context);
-     ***REMOVED*****REMOVED***)
+// export const helloWorld = onRequest((request, response) => {
+//   logger.info("Hello logs!", {structuredData: true});
+//   response.send("Hello from Firebase!");
+// });

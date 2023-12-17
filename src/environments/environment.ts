@@ -6,15 +6,15 @@
 ***REMOVED***
   useEmulators: true,
 ***REMOVED***
-      apiKey: "AIzaSyB9LOREMGhj1jpVXOHTKIwQu2oM7pVfjQg",
-      authDomain: "fir-course-recording-c7f3e.firebaseapp.com",
-      projectId: "fir-course-recording-c7f3e",
-      storageBucket: "fir-course-recording-c7f3e.appspot.com",
-      messagingSenderId: "927953565493",
-      appId: "1:927953565493:web:0d4a8e79cc45fd38733e7c"
+    apiKey: "AIzaSyBsWShPbdhNK4iDuzPIQCCMzlGskTFuHJU",
+  authDomain: "lively-antonym-407508.firebaseapp.com",
+  projectId: "lively-antonym-407508",
+  storageBucket: "lively-antonym-407508.appspot.com",
+  messagingSenderId: "800096855950",
+  appId: "1:800096855950:web:25ab0ea4ccc2e448ac26df"
 ***REMOVED***
 ***REMOVED***
-      createUser: "http://localhost:5001/fir-course-recording-c7f3e/us-central1/createUser"
+
 ***REMOVED***
 ***REMOVED***
 

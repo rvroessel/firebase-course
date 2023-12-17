@@ -1,18 +1,12 @@
 rules_version = '2';
 
+// Craft rules based on data in your Firestore database
+// allow write: if firestore.get(
+//    /databases/(default)/documents/users/$(request.auth.uid)).data.isAdmin;
 service firebase.storage {
-
   match /b/{bucket}/o {
-
-    match /courses/{courseId}/{fileName} {
-
-        allow read;
-
-        allow write: if request.auth != null &&
-                    request.resource.size < 5***REMOVED*** 1024***REMOVED*** 1024;
-
+    match /{allPaths=**} {
+      allow read, write: if false;
  ***REMOVED*****REMOVED***
-
 ***REMOVED***
-
 }
