@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 
 import "firebase/firestore";
 
-import { AngularFirestore, DocumentChangeAction } from "@angular/fire/firestore";
+import { AngularFirestore, DocumentChangeAction } from "@angular/fire/compat/firestore";
 import { COURSES, findLessonsForCourse } from "./db-data";
 
 @Component({

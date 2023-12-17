@@ -1,4 +1,4 @@
-import { DocumentChangeAction, QuerySnapshot } from "@angular/fire/firestore";
+import { DocumentChangeAction, QuerySnapshot } from "@angular/fire/compat/firestore";
 
 export function convertSnaps<T>(snaps: QuerySnapshot<T>): T[] {
     return snaps.docs.map(snap => {
