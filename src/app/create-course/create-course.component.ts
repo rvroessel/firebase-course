@@ -18,10 +18,10 @@ export class CreateCourseComponent implements OnInit {
 
   constructor() {
 
-***REMOVED***
+  }
 
   ngOnInit() {
 
-***REMOVED***
+  }
 
 }

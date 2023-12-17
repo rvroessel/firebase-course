@@ -15,13 +15,13 @@ export class CreateUserComponent {
         email: ['', [Validators.email, Validators.required]],
         password: ['', [Validators.required, Validators.minLength(5)]],
         admin: [false]
- ***REMOVED*****REMOVED***);
+    });
 
   constructor(
       private fb: FormBuilder,
       private http: HttpClient) {
 
-***REMOVED***
+  }
 
     onCreateUser() {
 
@@ -29,6 +29,6 @@ export class CreateUserComponent {
 
         console.log(user);
 
- ***REMOVED*****REMOVED***
+    }
 
 }

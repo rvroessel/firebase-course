@@ -2,7 +2,7 @@
   "firestore": {
     "rules": "firestore.rules",
     "indexes": "firestore.indexes.json"
-***REMOVED***
+  },
   "functions": [
     {
       "source": "functions",
@@ -16,44 +16,44 @@
       "predeploy": [
         "npm --prefix \"$RESOURCE_DIR\" run build"
       ]
- ***REMOVED*****REMOVED***
+    }
   ],
   "hosting": {
     "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules***REMOVED****"
+      "**/node_modules/**"
     ],
     "rewrites": [
       {
         "source": "**",
         "destination": "/index.html"
-   ***REMOVED*****REMOVED***
+      }
     ]
-***REMOVED***
+  },
   "storage": {
     "rules": "storage.rules"
-***REMOVED***
+  },
   "emulators": {
     "auth": {
       "port": 9099
- ***REMOVED*****REMOVED***
+    },
     "functions": {
       "port": 5001
- ***REMOVED*****REMOVED***
+    },
     "firestore": {
       "port": 8080
- ***REMOVED*****REMOVED***
+    },
     "hosting": {
       "port": 5000
- ***REMOVED*****REMOVED***
+    },
     "ui": {
       "enabled": true
- ***REMOVED*****REMOVED***
+    },
     "singleProjectMode": true,
     "storage": {
       "port": 9199
- ***REMOVED*****REMOVED***
-***REMOVED***
+    }
+  }
 }

@@ -25,11 +25,11 @@ export class CoursesCardListComponent implements OnInit {
     constructor(
       private dialog: MatDialog,
       private router: Router) {
- ***REMOVED*****REMOVED***
+    }
 
     ngOnInit() {
 
- ***REMOVED*****REMOVED***
+    }
 
     editCourse(course:Course) {
 
@@ -46,10 +46,10 @@ export class CoursesCardListComponent implements OnInit {
             .subscribe(val => {
                 if (val) {
                     this.courseEdited.emit();
-             ***REMOVED*****REMOVED***
-         ***REMOVED*****REMOVED***);
+                }
+            });
 
- ***REMOVED*****REMOVED***
+    }
 
 }
 

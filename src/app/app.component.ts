@@ -14,10 +14,10 @@ export class AppComponent implements OnInit {
 
   constructor() {
 
-***REMOVED***
+  }
 
   ngOnInit() {
 
-***REMOVED***
+  }
 
 }

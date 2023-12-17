@@ -5,14 +5,14 @@ export function convertSnaps<T>(snaps: QuerySnapshot<T>): T[] {
       return {
         id: snap.id,
         ...snap.data()
-   ***REMOVED*****REMOVED*** as T;
- ***REMOVED*****REMOVED***);
-***REMOVED***;
+      } as T;
+    });
+  };
 
 
   export function mapSnapToCourse<T>(snap: DocumentChangeAction<T>): T {
     return {
       id: snap.payload.doc.id,
       ...snap.payload.doc.data()
- ***REMOVED*****REMOVED*** as T;
-***REMOVED***;
+    } as T;
+  };

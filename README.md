@@ -9,7 +9,7 @@ This course is updated to Angular 13:
 
 You can find the starting point of the course in the [1-start branch](https://github.com/angular-university/firebase-course/tree/1-start).
 
-This master branch contains the***REMOVED***final version of the course code*, that you can use as a reference if you choose to code along. 
+This master branch contains the *final version of the course code*, that you can use as a reference if you choose to code along. 
 
 
 
@@ -32,7 +32,7 @@ We can install the master branch using the following commands:
     cd firebase-course
     npm ci
 
-Note:***REMOVED****We recommend using npm ci, instead of npm install**. This will ensure that you use the exact dependency versions set on package-lock.json, unlike npm install which might potentially change those versions.
+Note: **We recommend using npm ci, instead of npm install**. This will ensure that you use the exact dependency versions set on package-lock.json, unlike npm install which might potentially change those versions.
 
 # To run the Development UI Server
 

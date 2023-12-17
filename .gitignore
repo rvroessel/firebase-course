@@ -19,7 +19,7 @@
 *.sublime-workspace
 
 # IDE - VSCode
-.vscode***REMOVED***
+.vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
@@ -36,8 +36,8 @@ testem.log
 /typings
 
 # e2e
-/e2e***REMOVED***.js
-/e2e***REMOVED***.map
+/e2e/*.js
+/e2e/*.map
 
 # System Files
 .DS_Store
@@ -46,6 +46,6 @@ firebase-debug.log
 firestore-debug.log
 ui-debug.log
 /try-emulator/node_modules
-/functions/service-accounts***REMOVED***.json
-
+/functions/service-accounts/*.json
+src/environments/environment.ts
 /src/environments

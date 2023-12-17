@@ -9,7 +9,7 @@ export const COURSES: any = {
     categories: ['BEGINNER'],
     seqNo: 0,
     url: 'serverless-angular'
-***REMOVED***
+  },
 
   19: {
     id: 19,
@@ -22,7 +22,7 @@ export const COURSES: any = {
     seqNo: 1,
     url: 'angular-forms-course',
     price: 50
-***REMOVED***
+  },
 
 
   18: {
@@ -36,7 +36,7 @@ export const COURSES: any = {
     seqNo: 2,
     url: 'angular-router-course',
     price: 50
-***REMOVED***
+  },
 
   17: {
     id: 17,
@@ -50,7 +50,7 @@ export const COURSES: any = {
     url: 'reactive-angular-course',
     price: 50
 
-***REMOVED***
+  },
   3: {
     id: 3,
     description: 'RxJs In Practice Course',
@@ -62,7 +62,7 @@ export const COURSES: any = {
     seqNo: 4,
     url: 'rxjs-course',
     price: 50
-***REMOVED***
+  },
 
   4: {
     id: 4,
@@ -75,7 +75,7 @@ export const COURSES: any = {
     url: 'ngrx-course',
     promo: false,
     price: 50
-***REMOVED***
+  },
 
 
   2: {
@@ -88,7 +88,7 @@ export const COURSES: any = {
     seqNo: 6,
     url: 'angular-core-course',
     price: 50
-***REMOVED***
+  },
 
 
   5: {
@@ -103,7 +103,7 @@ export const COURSES: any = {
     seqNo: 7,
     url: 'angular-for-beginners',
     price: 50
-***REMOVED***
+  },
 
   12: {
     id: 12,
@@ -116,7 +116,7 @@ export const COURSES: any = {
     lessonsCount: 10,
     promo: false,
     price: 50
-***REMOVED***
+  },
 
   16: {
     id: 16,
@@ -128,7 +128,7 @@ export const COURSES: any = {
     seqNo: 10,
     url: 'stripe-course',
     price: 50
-***REMOVED***
+  },
 
 
   14: {
@@ -142,7 +142,7 @@ export const COURSES: any = {
     url: 'nestjs-course',
     promo: false,
     price: 50
-***REMOVED***
+  },
 
 
   6: {
@@ -156,7 +156,7 @@ export const COURSES: any = {
     seqNo: 12,
     url: 'angular-security-course',
     price: 50
-***REMOVED***
+  },
 
   7: {
     id: 7,
@@ -169,7 +169,7 @@ export const COURSES: any = {
     seqNo: 14,
     url: 'angular-pwa-course',
     price: 50
-***REMOVED***
+  },
 
   8: {
     id: 8,
@@ -181,7 +181,7 @@ export const COURSES: any = {
     seqNo: 15,
     url: 'angular-advanced-course',
     price: 50
-***REMOVED***
+  },
 
   9: {
     id: 9,
@@ -193,7 +193,7 @@ export const COURSES: any = {
     seqNo: 16,
     url: 'typescript-course',
     price: 50
-***REMOVED***
+  },
 
   11: {
     id: 11,
@@ -204,9 +204,9 @@ export const COURSES: any = {
     seqNo: 17,
     url: 'angular-material-course',
     price: 50
-***REMOVED***
+  }
 
-***REMOVED***
+};
 
 export const LESSONS = {
 
@@ -216,70 +216,70 @@ export const LESSONS = {
     'duration': '4:17',
     'seqNo': 1,
     courseId: 5
-***REMOVED***
+  },
   2: {
     id: 2,
     'description': 'Building Your First  Component - Component Composition',
     'duration': '2:07',
     'seqNo': 2,
     courseId: 5
-***REMOVED***
+  },
   3: {
     id: 3,
     'description': 'Component @Input - How To Pass Input Data To an  Component',
     'duration': '2:33',
     'seqNo': 3,
     courseId: 5
-***REMOVED***
+  },
   4: {
     id: 4,
     'description': ' Component Events - Using @Output to create custom events',
     'duration': '4:44',
     'seqNo': 4,
     courseId: 5
-***REMOVED***
+  },
   5: {
     id: 5,
     'description': ' Component Templates - Inline Vs External',
     'duration': '2:55',
     'seqNo': 5,
     courseId: 5
-***REMOVED***
+  },
   6: {
     id: 6,
     'description': 'Styling  Components - Learn About Component Style Isolation',
     'duration': '3:27',
     'seqNo': 6,
     courseId: 5
-***REMOVED***
+  },
   7: {
     id: 7,
     'description': ' Component Interaction - Extended Components Example',
     'duration': '9:22',
     'seqNo': 7,
     courseId: 5
-***REMOVED***
+  },
   8: {
     id: 8,
     'description': ' Components Tutorial For Beginners - Components Exercise !',
     'duration': '1:26',
     'seqNo': 8,
     courseId: 5
-***REMOVED***
+  },
   9: {
     id: 9,
     'description': ' Components Tutorial For Beginners - Components Exercise Solution Inside',
     'duration': '2:08',
     'seqNo': 9,
     courseId: 5
-***REMOVED***
+  },
   10: {
     id: 10,
     'description': ' Directives - Inputs, Output Event Emitters and How To Export Template References',
     'duration': '4:01',
     'seqNo': 10,
     courseId: 5
-***REMOVED***
+  },
 
 
   // Security Course
@@ -289,7 +289,7 @@ export const LESSONS = {
     'duration': '08:19',
     'seqNo': 1,
     courseId: 6
-***REMOVED***
+  },
 
   12: {
     id: 12,
@@ -297,7 +297,7 @@ export const LESSONS = {
     'duration': '04:17',
     'seqNo': 2,
     courseId: 6
-***REMOVED***
+  },
 
   13: {
     id: 13,
@@ -305,7 +305,7 @@ export const LESSONS = {
     'duration': '06:05',
     'seqNo': 3,
     courseId: 6
-***REMOVED***
+  },
 
   14: {
     id: 14,
@@ -313,7 +313,7 @@ export const LESSONS = {
     'duration': '03:57',
     'seqNo': 4,
     courseId: 6
-***REMOVED***
+  },
 
   15: {
     id: 15,
@@ -321,49 +321,49 @@ export const LESSONS = {
     'duration': '06:00',
     'seqNo': 5,
     courseId: 6
-***REMOVED***
+  },
   16: {
     id: 16,
     'description': 'Client Side Authentication Service - API Design',
     'duration': '04:53',
     'seqNo': 6,
     courseId: 6
-***REMOVED***
+  },
   17: {
     id: 17,
     'description': 'Client Authentication Service - Design and Implementation',
     'duration': '09:14',
     'seqNo': 7,
     courseId: 6
-***REMOVED***
+  },
   18: {
     id: 18,
     'description': 'The New Angular HTTP Client - Doing a POST Call To The Server',
     'duration': '06:08',
     'seqNo': 8,
     courseId: 6
-***REMOVED***
+  },
   19: {
     id: 19,
     'description': 'User Sign Up Server-Side Implementation in Express',
     'duration': '08:50',
     'seqNo': 9,
     courseId: 6
-***REMOVED***
+  },
   20: {
     id: 20,
     'description': 'Introduction To Cryptographic Hashes - A Running Demo',
     'duration': '05:46',
     'seqNo': 10,
     courseId: 6
-***REMOVED***
+  },
   21: {
     id: 21,
     'description': 'Some Interesting Properties Of Hashing Functions - Validating Passwords',
     'duration': '06:31',
     'seqNo': 11,
     courseId: 6
-***REMOVED***
+  },
 
 
   // PWA course
@@ -374,28 +374,28 @@ export const LESSONS = {
     'duration': '07:19',
     'seqNo': 1,
     courseId: 7
-***REMOVED***
+  },
   23: {
     id: 23,
     'description': 'Service Workers In a Nutshell - Service Worker Registration',
     'duration': '6:59',
     'seqNo': 2,
     courseId: 7
-***REMOVED***
+  },
   24: {
     id: 24,
     'description': 'Service Workers Hello World - Lifecycle Part 1 and PWA Chrome Dev Tools',
     'duration': '7:28',
     'seqNo': 3,
     courseId: 7
-***REMOVED***
+  },
   25: {
     id: 25,
     'description': 'Service Workers and Application Versioning - Install & Activate Lifecycle Phases',
     'duration': '10:17',
     'seqNo': 4,
     courseId: 7
-***REMOVED***
+  },
 
   26: {
     id: 26,
@@ -403,28 +403,28 @@ export const LESSONS = {
     'duration': '09:50',
     'seqNo': 5,
     courseId: 7
-***REMOVED***
+  },
   27: {
     id: 27,
     'description': 'Introduction to the Cache Storage PWA API',
     'duration': '04:44',
     'seqNo': 6,
     courseId: 7
-***REMOVED***
+  },
   28: {
     id: 28,
     'description': 'View Service Workers HTTP Interception Features In Action',
     'duration': '06:07',
     'seqNo': 7,
     courseId: 7
-***REMOVED***
+  },
   29: {
     id: 29,
     'description': 'Service Workers Error Handling - Serving The Offline Page',
     'duration': '5:38',
     'seqNo': 8,
     courseId: 7
-***REMOVED***
+  },
 
   // Firebase & AngularFire Course
 
@@ -434,7 +434,7 @@ export const LESSONS = {
     'duration': '5:38',
     'seqNo': 1,
     courseId: 20
-***REMOVED***
+  },
 
   31: {
     id: 31,
@@ -442,7 +442,7 @@ export const LESSONS = {
     'duration': '5:12',
     'seqNo': 2,
     courseId: 20
-***REMOVED***
+  },
 
   32: {
     id: 32,
@@ -450,7 +450,7 @@ export const LESSONS = {
     'duration': '4:07',
     'seqNo': 3,
     courseId: 20
-***REMOVED***
+  },
 
   33: {
     id: 33,
@@ -458,7 +458,7 @@ export const LESSONS = {
     'duration': '7:32',
     'seqNo': 4,
     courseId: 20
-***REMOVED***
+  },
 
   34: {
     id: 34,
@@ -466,7 +466,7 @@ export const LESSONS = {
     'duration': '6:28',
     'seqNo': 5,
     courseId: 20
-***REMOVED***
+  },
 
   35: {
     id: 35,
@@ -474,7 +474,7 @@ export const LESSONS = {
     'duration': '4:38',
     'seqNo': 6,
     courseId: 20
-***REMOVED***
+  },
 
   36: {
     id: 36,
@@ -482,7 +482,7 @@ export const LESSONS = {
     'duration': '7:54',
     'seqNo': 7,
     courseId: 20
-***REMOVED***
+  },
 
   37: {
     id: 37,
@@ -490,7 +490,7 @@ export const LESSONS = {
     'duration': '5:31',
     'seqNo': 8,
     courseId: 20
-***REMOVED***
+  },
 
   38: {
     id: 38,
@@ -498,7 +498,7 @@ export const LESSONS = {
     'duration': '8:19',
     'seqNo': 9,
     courseId: 20
-***REMOVED***
+  },
 
   39: {
     id: 39,
@@ -506,7 +506,7 @@ export const LESSONS = {
     'duration': '7:05',
     'seqNo': 10,
     courseId: 20
-***REMOVED***
+  },
 
 
 // Angular Testing Course
@@ -517,7 +517,7 @@ export const LESSONS = {
     'duration': '5:38',
     'seqNo': 1,
     courseId: 12
-***REMOVED***
+  },
 
   41: {
     id: 41,
@@ -525,7 +525,7 @@ export const LESSONS = {
     'duration': '5:12',
     'seqNo': 2,
     courseId: 12
-***REMOVED***
+  },
 
   42: {
     id: 42,
@@ -533,7 +533,7 @@ export const LESSONS = {
     'duration': '4:07',
     'seqNo': 3,
     courseId: 12
-***REMOVED***
+  },
 
   43: {
     id: 43,
@@ -541,7 +541,7 @@ export const LESSONS = {
     'duration': '7:32',
     'seqNo': 4,
     courseId: 12
-***REMOVED***
+  },
 
   44: {
     id: 44,
@@ -549,7 +549,7 @@ export const LESSONS = {
     'duration': '6:28',
     'seqNo': 5,
     courseId: 12
-***REMOVED***
+  },
 
   45: {
     id: 45,
@@ -557,7 +557,7 @@ export const LESSONS = {
     'duration': '4:38',
     'seqNo': 6,
     courseId: 12
-***REMOVED***
+  },
 
   46: {
     id: 46,
@@ -565,7 +565,7 @@ export const LESSONS = {
     'duration': '7:54',
     'seqNo': 7,
     courseId: 12
-***REMOVED***
+  },
 
   47: {
     id: 47,
@@ -573,7 +573,7 @@ export const LESSONS = {
     'duration': '5:31',
     'seqNo': 8,
     courseId: 12
-***REMOVED***
+  },
 
   48: {
     id: 48,
@@ -581,7 +581,7 @@ export const LESSONS = {
     'duration': '8:19',
     'seqNo': 9,
     courseId: 12
-***REMOVED***
+  },
 
   49: {
     id: 49,
@@ -589,7 +589,7 @@ export const LESSONS = {
     'duration': '7:05',
     'seqNo': 10,
     courseId: 12
-***REMOVED***
+  },
 
 
   // Ngrx Course
@@ -600,42 +600,42 @@ export const LESSONS = {
     'seqNo': 1,
     courseId: 4
 
-***REMOVED***
+  },
   51: {
     id: 51,
     'description': 'The Angular Ngrx Architecture Course - Helicopter View',
     'duration': '5:52',
     'seqNo': 2,
     courseId: 4
-***REMOVED***
+  },
   52: {
     id: 52,
     'description': 'The Origins of Flux - Understanding the Famous Facebook Bug Problem',
     'duration': '8:17',
     'seqNo': 3,
     courseId: 4
-***REMOVED***
+  },
   53: {
     id: 53,
     'description': 'Custom Global Events - Why Don\'t They Scale In Complexity?',
     'duration': '7:47',
     'seqNo': 4,
     courseId: 4
-***REMOVED***
+  },
   54: {
     id: 54,
     'description': 'The Flux Architecture - How Does it Solve Facebook Counter Problem?',
     'duration': '9:22',
     'seqNo': 5,
     courseId: 4
-***REMOVED***
+  },
   55: {
     id: 55,
     'description': 'Unidirectional Data Flow And The Angular Development Mode',
     'duration': '7:07',
     'seqNo': 6,
     courseId: 4
-***REMOVED***
+  },
 
   56: {
     id: 56,
@@ -643,28 +643,28 @@ export const LESSONS = {
     'duration': '4:39',
     'seqNo': 7,
     courseId: 4
-***REMOVED***
+  },
   57: {
     id: 57,
     'description': 'Setting Up the Ngrx DevTools - Demo',
     'duration': '4:44',
     'seqNo': 8,
     courseId: 4
-***REMOVED***
+  },
   58: {
     id: 58,
     'description': 'Understanding Reducers - Writing Our First Reducer',
     'duration': '9:10',
     'seqNo': 9,
     courseId: 4
-***REMOVED***
+  },
   59: {
     id: 59,
     'description': 'How To Define the Store Initial State',
     'duration': '9:10',
     'seqNo': 10,
     courseId: 4
-***REMOVED***
+  },
 
   // NestJs Course
 
@@ -674,70 +674,70 @@ export const LESSONS = {
     'duration': '4:29',
     'seqNo': 1,
     courseId: 14
-***REMOVED***
+  },
   61: {
     id: 61,
     'description': 'Development Environment Setup',
     'duration': '6:37',
     'seqNo': 2,
     courseId: 14
-***REMOVED***
+  },
   62: {
     id: 62,
     'description': 'Setting up a MongoDB Database',
     'duration': '6:38',
     'seqNo': 3,
     courseId: 14
-***REMOVED***
+  },
   63: {
     id: 63,
     'description': 'CRUD with NestJs - Controllers and Repositories',
     'duration': '12:12',
     'seqNo': 4,
     courseId: 14
-***REMOVED***
+  },
   64: {
     id: 64,
     'description': 'First REST endpoint - Get All Courses',
     'duration': '3:42',
     'seqNo': 5,
     courseId: 14
-***REMOVED***
+  },
   65: {
     id: 65,
     'description': 'Error Handling',
     'duration': '5:15',
     'seqNo': 6,
     courseId: 14
-***REMOVED***
+  },
   66: {
     id: 66,
     'description': 'NestJs Middleware',
     'duration': '7:08',
     'seqNo': 7,
     courseId: 14
-***REMOVED***
+  },
   67: {
     id: 67,
     'description': 'Authentication in NestJs',
     'duration': '13:22',
     'seqNo': 8,
     courseId: 14
-***REMOVED***
+  },
   68: {
     id: 68,
     'description': 'Authorization in NestJs',
     'duration': '6:43',
     'seqNo': 9,
     courseId: 14
-***REMOVED***
+  },
   69: {
     id: 69,
     'description': 'Guards & Interceptors',
     'duration': '8:16',
     'seqNo': 10,
     courseId: 14
-***REMOVED***
+  },
 
   // Stripe Course
 
@@ -747,70 +747,70 @@ export const LESSONS = {
     'duration': '03:45',
     'seqNo': 0,
     courseId: 16
-***REMOVED***
+  },
   71: {
     id: 71,
     'description': 'The advantages of Stripe Checkout',
     'duration': '08:36',
     'seqNo': 1,
     courseId: 16
-***REMOVED***
+  },
   72: {
     id: 72,
     'description': 'Setting up the development environment',
     'duration': '09:10',
     'seqNo': 2,
     courseId: 16
-***REMOVED***
+  },
   73: {
     id: 73,
     'description': 'Creating a server Checkout Session',
     'duration': '07:20',
     'seqNo': 3,
     courseId: 16
-***REMOVED***
+  },
   74: {
     id: 74,
     'description': 'Redirecting to the Stripe Checkout page',
     'duration': '11:47',
     'seqNo': 4,
     courseId: 16
-***REMOVED***
+  },
   75: {
     id: 75,
     'description': 'Order fulfillment webhook',
     'duration': '06:30',
     'seqNo': 5,
     courseId: 16
-***REMOVED***
+  },
   76: {
     id: 76,
     'description': 'Installing the Stripe CLI',
     'duration': '4:13',
     'seqNo': 6,
     courseId: 16
-***REMOVED***
+  },
   77: {
     id: 77,
     'description': 'Firestore Security Rules for protecting Premium content',
     'duration': '05:47',
     'seqNo': 7,
     courseId: 16
-***REMOVED***
+  },
   78: {
     id: 78,
     'description': 'Stripe Subscriptions with Stripe Checkout',
     'duration': '05:17',
     'seqNo': 8,
     courseId: 16
-***REMOVED***
+  },
   79: {
     id: 79,
     'description': 'Stripe Subscription Fulfillment',
     'duration': '07:50',
     'seqNo': 9,
     courseId: 16
-***REMOVED***
+  },
 
 
   // Reactive Angular Course
@@ -822,7 +822,7 @@ export const LESSONS = {
     'seqNo': 0,
     courseId: 17,
     videoId: 'Df1QnesgB_s',
-***REMOVED***
+  },
   81: {
     id: 81,
     'description': 'Introduction to RxJs',
@@ -830,7 +830,7 @@ export const LESSONS = {
     'seqNo': 1,
     courseId: 17,
     videoId: '8m5RrAtqlyw',
-***REMOVED***
+  },
   82: {
     id: 82,
     'description': 'Setting up the development environment',
@@ -838,7 +838,7 @@ export const LESSONS = {
     'seqNo': 2,
     courseId: 17,
     videoId: '3fDbUB-nKqc',
-***REMOVED***
+  },
   83: {
     id: 83,
     'description': 'Designing and building a Service Layer',
@@ -846,7 +846,7 @@ export const LESSONS = {
     'seqNo': 3,
     courseId: 17,
     videoId: '',
-***REMOVED***
+  },
   84: {
     id: 84,
     'description': 'Stateless Observable Services',
@@ -854,7 +854,7 @@ export const LESSONS = {
     'seqNo': 4,
     courseId: 17,
     videoId: 'qvDPnRs_ZPA',
-***REMOVED***
+  },
   85: {
     id: 85,
     'description': 'Smart vs Presentational Components',
@@ -862,7 +862,7 @@ export const LESSONS = {
     'seqNo': 5,
     courseId: 17,
     videoId: '5bsZJGAelFM',
-***REMOVED***
+  },
   86: {
     id: 86,
     'description': 'Lightweight state management',
@@ -870,7 +870,7 @@ export const LESSONS = {
     'seqNo': 6,
     courseId: 17,
     videoId: '9m3_HHeP9Ko',
-***REMOVED***
+  },
   87: {
     id: 87,
     'description': 'Event bubbling anti-pattern',
@@ -878,7 +878,7 @@ export const LESSONS = {
     'seqNo': 7,
     courseId: 17,
     videoId: 'PRQCAL_RMVo',
-***REMOVED***
+  },
   88: {
     id: 88,
     'description': 'Master detail with cached master table',
@@ -886,7 +886,7 @@ export const LESSONS = {
     'seqNo': 8,
     courseId: 17,
     videoId: 'du4ib4jBUG0'
-***REMOVED***
+  },
   89: {
     id: 89,
     'description': 'Error handling',
@@ -894,7 +894,7 @@ export const LESSONS = {
     'seqNo': 9,
     courseId: 17,
     videoId: '8m5RrAtqlyw'
-***REMOVED***
+  },
 
 
   // Angular Router Course
@@ -905,7 +905,7 @@ export const LESSONS = {
     'seqNo': 1,
     courseId: 18,
     videoId: 'VES1eTNxi1s'
-***REMOVED***
+  },
   91: {
     id: 91,
     'description': 'Setting Up The Development Environment',
@@ -913,7 +913,7 @@ export const LESSONS = {
     'seqNo': 2,
     courseId: 18,
     videoId: 'ANfplcxnl78'
-***REMOVED***
+  },
   92: {
     id: 92,
     'description': 'Angular Router Setup',
@@ -921,7 +921,7 @@ export const LESSONS = {
     'seqNo': 3,
     courseId: 18,
     videoId: '9ez72LAd6mM'
-***REMOVED***
+  },
   93: {
     id: 93,
     'description': 'Configuring a Home Route and Fallback Route',
@@ -929,7 +929,7 @@ export const LESSONS = {
     'seqNo': 4,
     courseId: 18,
     videoId: 'Clj-jZpl64w'
-***REMOVED***
+  },
   94: {
     id: 94,
     'description': 'Styling Active Routes With The routerLinkActive And routerLinkActiveOptions',
@@ -937,7 +937,7 @@ export const LESSONS = {
     'seqNo': 5,
     courseId: 18,
     videoId: 'zcgnsmPVc30'
-***REMOVED***
+  },
   95: {
     id: 95,
     'description': 'Child Routes - How To Setup a Master Detail Route',
@@ -945,7 +945,7 @@ export const LESSONS = {
     'seqNo': 6,
     courseId: 18,
     videoId: 'zcgnsmPVc30'
-***REMOVED***
+  },
   96: {
     id: 96,
     'description': 'Programmatic Router Navigation via the Router API ',
@@ -953,7 +953,7 @@ export const LESSONS = {
     'seqNo': 7,
     courseId: 18,
     videoId: 'VES1eTNxi1s'
-***REMOVED***
+  },
   97: {
     id: 97,
     'description': 'Relative And Absolute Router Navigation',
@@ -961,7 +961,7 @@ export const LESSONS = {
     'seqNo': 8,
     courseId: 18,
     videoId: 'MQl9Zs3QqGM'
-***REMOVED***
+  },
   98: {
     id: 98,
     'description': 'Master Detail Navigation And Route Parameters',
@@ -969,7 +969,7 @@ export const LESSONS = {
     'seqNo': 9,
     courseId: 18,
     videoId: 'ANfplcxnl78'
-***REMOVED***
+  },
 
   99: {
     id: 99,
@@ -978,7 +978,7 @@ export const LESSONS = {
     'seqNo': 10,
     courseId: 18,
     videoId: 'zcgnsmPVc30'
-***REMOVED***
+  },
   100: {
     id: 100,
     'description': 'Optional Route Query Parameters',
@@ -986,7 +986,7 @@ export const LESSONS = {
     'seqNo': 11,
     courseId: 18,
     videoId: '0Qsg8fyKwO4'
-***REMOVED***
+  },
   101: {
     id: 101,
     'description': 'The queryParams Directive and the Query Parameters Observable',
@@ -994,7 +994,7 @@ export const LESSONS = {
     'seqNo': 12,
     courseId: 18,
     videoId: 'VES1eTNxi1s'
-***REMOVED***
+  },
   102: {
     id: 102,
     'description': 'Exiting an Angular Route - How To Prevent Memory Leaks',
@@ -1002,7 +1002,7 @@ export const LESSONS = {
     'seqNo': 13,
     courseId: 18,
     videoId: 'ANfplcxnl78'
-***REMOVED***
+  },
   103: {
     id: 103,
     'description': 'CanDeactivate Route Guard',
@@ -1010,7 +1010,7 @@ export const LESSONS = {
     'seqNo': 14,
     courseId: 18,
     videoId: '9ez72LAd6mM'
-***REMOVED***
+  },
   104: {
     id: 104,
     'description': 'CanActivate Route Guard - An Example of An Asynchronous Route Guard',
@@ -1018,7 +1018,7 @@ export const LESSONS = {
     'seqNo': 15,
     courseId: 18,
     videoId: 'Clj-jZpl64w'
-***REMOVED***
+  },
 
 
   105: {
@@ -1028,7 +1028,7 @@ export const LESSONS = {
     'seqNo': 16,
     courseId: 18,
     videoId: 'zcgnsmPVc30'
-***REMOVED***
+  },
 
   106: {
     id: 106,
@@ -1037,7 +1037,7 @@ export const LESSONS = {
     'seqNo': 17,
     courseId: 18,
     videoId: 'yjQUkNHb1Is'
-***REMOVED***
+  },
   107: {
     id: 107,
     'description': 'Angular Router Redirects and Path Matching',
@@ -1045,7 +1045,7 @@ export const LESSONS = {
     'seqNo': 18,
     courseId: 18,
     videoId: 'VES1eTNxi1s'
-***REMOVED***
+  },
   108: {
     id: 108,
     'description': 'Angular Router Hash Location Strategy',
@@ -1053,7 +1053,7 @@ export const LESSONS = {
     'seqNo': 19,
     courseId: 18,
     videoId: 'MQl9Zs3QqGM'
-***REMOVED***
+  },
   109: {
     id: 109,
     'description': 'Angular Router Lazy Loading and Shared Modules',
@@ -1061,7 +1061,7 @@ export const LESSONS = {
     'seqNo': 20,
     courseId: 18,
     videoId: '0Qsg8fyKwO4'
-***REMOVED***
+  },
   110: {
     id: 110,
     'description': 'Exercise - Implement a Widget Dashboard',
@@ -1069,7 +1069,7 @@ export const LESSONS = {
     'seqNo': 21,
     courseId: 18,
     videoId: 'VES1eTNxi1s'
-***REMOVED***
+  },
   111: {
     id: 111,
     'description': 'Exercise Solution ',
@@ -1077,10 +1077,10 @@ export const LESSONS = {
     'seqNo': 22,
     courseId: 18,
     videoId: '0Qsg8fyKwO4'
-***REMOVED***
+  }
 
 
-***REMOVED***
+};
 
 
 export const USERS = {
@@ -1089,9 +1089,9 @@ export const USERS = {
     email: 'test@angular-university.io',
     password: 'test',
     pictureUrl: 'https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png'
-***REMOVED***
+  }
 
-***REMOVED***
+};
 
 
 export function findCourseById(courseId: number) {
@@ -1108,8 +1108,8 @@ export function authenticate(email: string, password: string) {
 
   if (user && user.password == password) {
     return user;
-***REMOVED*** else {
+  } else {
     return undefined;
-***REMOVED***
+  }
 
 }

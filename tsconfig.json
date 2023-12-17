@@ -1,4 +1,4 @@
-***REMOVED*** To learn more about this file see: https://angular.io/config/tsconfig.***REMOVED***/
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -17,8 +17,8 @@
       "ES2022",
       "dom"
     ]
-***REMOVED***
+  },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false
-***REMOVED***
+  }
 }

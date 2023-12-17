@@ -7,13 +7,13 @@
         {
           "fieldPath": "categories",
           "arrayConfig": "CONTAINS"
-     ***REMOVED*****REMOVED***
+        },
         {
           "fieldPath": "seqNo",
           "order": "ASCENDING"
-     ***REMOVED*****REMOVED***
+        }
       ]
- ***REMOVED*****REMOVED***
+    },
     {
       "collectionGroup": "lessons",
       "queryScope": "COLLECTION",
@@ -21,13 +21,13 @@
         {
           "fieldPath": "lessonsCount",
           "order": "ASCENDING"
-     ***REMOVED*****REMOVED***
+        },
         {
           "fieldPath": "seqNo",
           "order": "ASCENDING"
-     ***REMOVED*****REMOVED***
+        }
       ]
- ***REMOVED*****REMOVED***
+    }
   ],
   "fieldOverrides": [
     {
@@ -38,20 +38,20 @@
         {
           "order": "ASCENDING",
           "queryScope": "COLLECTION"
-     ***REMOVED*****REMOVED***
+        },
         {
           "order": "DESCENDING",
           "queryScope": "COLLECTION"
-     ***REMOVED*****REMOVED***
+        },
         {
           "arrayConfig": "CONTAINS",
           "queryScope": "COLLECTION"
-     ***REMOVED*****REMOVED***
+        },
         {
           "order": "ASCENDING",
           "queryScope": "COLLECTION_GROUP"
-     ***REMOVED*****REMOVED***
+        }
       ]
- ***REMOVED*****REMOVED***
+    }
   ]
 }

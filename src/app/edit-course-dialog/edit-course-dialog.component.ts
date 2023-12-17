@@ -15,7 +15,7 @@ export class EditCourseDialogComponent {
 
     constructor() {
 
- ***REMOVED*****REMOVED***
+    }
 }
 
 

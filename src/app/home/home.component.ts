@@ -23,5 +23,5 @@ export class HomeComponent implements OnInit {
       this.courseService.loadCoursesByCategory("BEGINNER");
     this.advancedCourses$ =
       this.courseService.loadCoursesByCategory("ADVANCED");
-***REMOVED***
+  }
 }

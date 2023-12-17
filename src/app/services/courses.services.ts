@@ -13,23 +13,23 @@ export class CourseService {
 
   getCourses() {
     return this.db.collection("courses").get();
-***REMOVED***
+  }
 
   getCourse(id: string) {
     return this.db.collection("courses").doc(id).get();
-***REMOVED***
+  }
 
   addCourse(course: Course) {
     return this.db.collection("courses").add(course);
-***REMOVED***
+  }
 
   updateCourse(course: Course) {
     return this.db.collection("courses").doc(course.id).update(course);
-***REMOVED***
+  }
 
   deleteCourse(id: string) {
     return this.db.collection("courses").doc(id).delete();
-***REMOVED***
+  }
 
   loadCoursesByCategory(category: string): Observable<Course[]> {
     return this.db.collection<Course>("courses",
@@ -40,5 +40,5 @@ export class CourseService {
       map(snap => snap.map(mapSnapToCourse))
     )
         
-***REMOVED***
+  }
 }

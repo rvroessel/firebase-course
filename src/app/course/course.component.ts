@@ -19,10 +19,10 @@ export class CourseComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) {
 
-***REMOVED***
+  }
 
   ngOnInit() {
 
-***REMOVED***
+  }
 
 }

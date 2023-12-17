@@ -26,15 +26,15 @@ export class AboutComponent {
         const newLesson = this.removeId(lesson);
         delete newLesson.courseId;
         await lessons.add(newLesson);
-   ***REMOVED*****REMOVED***
- ***REMOVED*****REMOVED***
-***REMOVED***
+      }
+    }
+  }
 
   removeId(data: any) {
-    const newData: any = { ...data***REMOVED*****REMOVED***
+    const newData: any = { ...data };
     delete newData.id;
     return newData;
-***REMOVED***
+  }
 
   onReadDoc() {
     this.db
@@ -43,8 +43,8 @@ export class AboutComponent {
       .subscribe((snap) => {
         console.log(snap.data());
         console.log(snap.id);
-   ***REMOVED*****REMOVED***);
-***REMOVED***
+      });
+  }
 
   onReadCollection() {
     this.db
@@ -55,9 +55,9 @@ export class AboutComponent {
           console.log(snap.id);
           console.log(snap.data());
           this.onReadLessons(snap.id);
-     ***REMOVED*****REMOVED***);
-   ***REMOVED*****REMOVED***);
-***REMOVED***
+        });
+      });
+  }
 
   onReadLessons(id: string) {
     this.db
@@ -74,9 +74,9 @@ export class AboutComponent {
         snaps.forEach((snap) => {
           console.log(snap.id);
           console.log(snap.data());
-     ***REMOVED*****REMOVED***);
-   ***REMOVED*****REMOVED***);
-***REMOVED***
+        });
+      });
+  }
 
   onReadCollectionGroup() {
     this.db
@@ -86,13 +86,13 @@ export class AboutComponent {
         snaps.forEach((snap) => {
           console.log(snap.id);
           console.log(snap.data());
-     ***REMOVED*****REMOVED***);
-   ***REMOVED*****REMOVED***);
-***REMOVED***
+        });
+      });
+  }
 
- ***REMOVED*****REMOVED****
-  ***REMOVED*** Reads the collection in real-time and logs the document IDs and data.
-  ***REMOVED***/
+  /**
+   * Reads the collection in real-time and logs the document IDs and data.
+   */
   onReadCollectionRealtimeSnapshotChanges() {
     this.db
       .collection("courses")
@@ -101,13 +101,13 @@ export class AboutComponent {
         snaps.forEach((snap) => {
           console.log(snap.payload.doc.id);
           console.log(snap.payload.doc.data());
-     ***REMOVED*****REMOVED***);
-   ***REMOVED*****REMOVED***);
-***REMOVED***
+        });
+      });
+  }
 
-   ***REMOVED*****REMOVED****
-  ***REMOVED*** Reads the collection in real-time and logs the document IDs and data.
-  ***REMOVED***/
+    /**
+   * Reads the collection in real-time and logs the document IDs and data.
+   */
     onReadCollectionRealtimeValueChanges() {
       this.db
         .collection("courses")
@@ -115,7 +115,7 @@ export class AboutComponent {
         .subscribe((snaps: unknown[]) => {
           snaps.forEach(snap => {    
             console.log(snap);
-       ***REMOVED*****REMOVED***);
-     ***REMOVED*****REMOVED***);
- ***REMOVED*****REMOVED***
+          });
+        });
+    }
 }

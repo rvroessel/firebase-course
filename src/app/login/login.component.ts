@@ -1,5 +1,5 @@
 import {Component, NgZone, OnDestroy, OnInit} from '@angular/core';
-import***REMOVED*** as firebaseui from 'firebaseui';
+import * as firebaseui from 'firebaseui';
 import {AngularFireAuth} from '@angular/fire/compat/auth';
 import {Router} from '@angular/router';
 import firebase from 'firebase/compat/app';
@@ -17,15 +17,15 @@ export class LoginComponent implements OnInit, OnDestroy {
 
     constructor() {
 
- ***REMOVED*****REMOVED***
+    }
 
     ngOnInit() {
 
- ***REMOVED*****REMOVED***
+    }
 
     ngOnDestroy() {
 
- ***REMOVED*****REMOVED***
+    }
 }
 
 

@@ -6,18 +6,18 @@ describe('workspace-project App', () => {
 
   beforeEach(() => {
     page = new AppPage();
-***REMOVED***);
+  });
 
   it('should display welcome message', async () => {
     await page.navigateTo();
     expect(await page.getTitleText()).toEqual('try-emulator app is running!');
-***REMOVED***);
+  });
 
   afterEach(async () => {
     // Assert that there are no errors emitted from the browser
     const logs = await browser.manage().logs().get(logging.Type.BROWSER);
     expect(logs).not.toContain(jasmine.objectContaining({
       level: logging.Level.SEVERE,
- ***REMOVED*****REMOVED*** as logging.Entry));
-***REMOVED***);
+    } as logging.Entry));
+  });
 });

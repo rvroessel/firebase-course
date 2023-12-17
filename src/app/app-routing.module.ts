@@ -12,33 +12,33 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent
-***REMOVED***
+  },
   {
     path: 'create-course',
     component: CreateCourseComponent
 
-***REMOVED***
+  },
   {
     path: 'create-user',
     component: CreateUserComponent
 
-***REMOVED***
+  },
   {
     path: 'about',
     component: AboutComponent
-***REMOVED***
+  },
   {
     path: 'login',
     component: LoginComponent
-***REMOVED***
+  },
   {
     path: 'courses/:courseUrl',
     component: CourseComponent
-***REMOVED***
+  },
   {
     path: '**',
     redirectTo: '/'
-***REMOVED***
+  }
 ];
 
 @NgModule({
