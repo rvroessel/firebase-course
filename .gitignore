@@ -47,5 +47,6 @@ firestore-debug.log
 ui-debug.log
 /try-emulator/node_modules
 /functions/service-accounts/*.json
-src/environments/environment.ts
 /src/environments
+src/environments/environments.ts
+src/environments
